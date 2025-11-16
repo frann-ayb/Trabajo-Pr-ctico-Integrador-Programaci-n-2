@@ -1,4 +1,3 @@
-# Trabajo-Pr-ctico-Integrador-Programaci-n-2
 # Programación 2
 **Tecnicatura Universitaria en Programación**  
 
