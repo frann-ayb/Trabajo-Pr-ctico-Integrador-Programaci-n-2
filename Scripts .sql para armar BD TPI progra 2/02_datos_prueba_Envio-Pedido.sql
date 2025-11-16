@@ -1,0 +1,22 @@
+/*
+TRABAJO PRACTICO INTEGRADOR - PROGRAMACION II 
+SCRIPT .sql DATOS DE PRUEBA BD "LogisticaEnvios" PARA TPI.
+GRUPO N°: 177
+INTEGRANTES: MARTIN GOMEZ - MATIAS EZEQUIEL GONZALEZ - FRANCO ESTEBAN HERRERA GONZALEZ - AGUSTIN MARIO NICOLAS LEPKA
+TEMA: PEDIDO -> ENVIO
+ARCHIVO: 02_datos_prueba_Envio-Pedido.sql
+ */
+ 
+USE LogisticaEnvios;
+
+INSERT INTO Envio (tracking, empresa, tipo, costo, fechaDespacho, fechaEstimada, estado)
+VALUES
+('AND123456', 'ANDREANI', 'EXPRESS', 1500.00, '2025-11-01', '2025-11-03', 'EN_CAMINO'),
+('OCA789012', 'OCA', 'ESTANDAR', 800.00, '2025-11-02', '2025-11-06', 'EN_PREPARACION'),
+('COR345678', 'CORREO_ARG', 'EXPRESS', 1200.00, '2025-11-03', '2025-11-05', 'EN_CAMINO');
+
+INSERT INTO Pedido (numero, fecha, clienteNombre, total, estado, envio_id)
+VALUES
+('PED-001', '2025-11-01', 'Juan Pérez', 4800.00, 'ENVIADO', 1),
+('PED-002', '2025-11-02', 'María López', 3200.00, 'FACTURADO', 2),
+('PED-003', '2025-11-03', 'Carlos Díaz', 1500.00, 'NUEVO', 3);
